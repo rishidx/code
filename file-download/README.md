@@ -7,16 +7,16 @@ Access
 ------
 
 Once the application is up, it will run on default port 8080. Access the services and download files by either hitting one of these url
-* [docx file --> http://localhost:8080/file/1 OR http://localhost:8080/file?id=1]
-* [pdf file --> http://localhost:8080/file/2 OR http://localhost:8080/file?id=2] 
+* docx file: http://localhost:8080/file/1 OR http://localhost:8080/file?id=1
+* pdf file: http://localhost:8080/file/2 OR http://localhost:8080/file?id=2 
 
 Build
 =====
-To build this project run the command: 'mvn clean package' or 'mvn clean install' in this directory
+To build this project run the command: `mvn clean package` or `mvn clean install` in this directory
 
 Run
 ====
-To run spring boot module run the command: 'mvn spring-boot:run' in this directory
+To run spring boot module run the command: `mvn spring-boot:run` in this directory
 
 # Getting Started
 
@@ -27,6 +27,8 @@ For further reference, please consider the following sections:
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.2.7.RELEASE/maven-plugin/)
 * [Spring Web](https://docs.spring.io/spring-boot/docs/2.2.7.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.2.7.RELEASE/reference/htmlsingle/#boot-features-jpa-and-spring-data)
+* [Save blob object in database](https://www.viralpatel.net/tutorial-save-get-blob-object-spring-3-mvc-hibernate/)
+* [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition)
 
 ### Guides
 The following guides illustrate how to use some features concretely:
