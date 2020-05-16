@@ -10,7 +10,8 @@ Once the application is up, it will run on default port 8080. Access the service
 * Upload file: http://localhost:8080/file/upload
 	Postman code looks like
 	
-`POST /file/upload HTTP/1.1
+```
+POST /file/upload HTTP/1.1
 Host: localhost:8080
 Cache-Control: no-cache
 Postman-Token: 38d966dd-b677-658a-098d-32e4cf877b98
@@ -19,9 +20,9 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0g
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="file"; filename="Employee.docx"
 Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
-------WebKitFormBoundary7MA4YWxkTrZu0gW--`
-
-![Postman Tool SnapShot] (https://github.com/rishidx/code/blob/master/file-upload-convert-download/postman-upload.PNG)
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+```
+![File Upload SnapShot](https://github.com/rishidx/code/blob/master/file-upload-convert-download/postman-upload.PNG)
 
 * download file: http://localhost:8080/file/download/1 OR http://localhost:8080/file/download?id=1
 
