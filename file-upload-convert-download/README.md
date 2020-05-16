@@ -1,5 +1,5 @@
-# File-Download
-This project contains code to enable "file upload - download" from spring boot application.
+# File-Upload-Convert-Download
+This project contains code to enable "file - upload - download" from spring boot application.
 
 Files get uploaded as multipart and get store in in-memory database as byte array. The same is retrieve and process for download.
 
