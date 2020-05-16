@@ -13,12 +13,16 @@ import javax.persistence.TemporalType;
 
 import org.springframework.data.annotation.CreatedDate;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 import lombok.Data;
 import lombok.ToString;
 
 @Entity
 @Data
 @ToString(includeFieldNames = true)
+@JsonInclude(Include.NON_NULL)
 public class FileRecords {
 
 	@Id

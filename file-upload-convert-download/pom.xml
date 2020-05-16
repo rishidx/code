@@ -46,13 +46,23 @@
 			<version>2.6</version>
 		</dependency>
 
-		<!-- <dependency> <groupId>fr.opensagres.xdocreport</groupId> <artifactId>org.apache.poi.xwpf.converter.pdf</artifactId> 
-			<version>1.0.6</version> </dependency> -->
-		<!-- <dependency> <groupId>org.docx4j</groupId> <artifactId>docx4j</artifactId> 
-			<version>6.1.2</version> </dependency> -->
+		<dependency>
+			<groupId>fr.opensagres.xdocreport</groupId>
+			<artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.docx4j</groupId>
+			<artifactId>docx4j</artifactId>
+			<version>6.1.2</version>
+		</dependency>
 
-		<!-- <dependency> <groupId>com.aspose</groupId> <artifactId>aspose-words</artifactId> 
-			<version>20.4</version> <classifier>jdk17</classifier> </dependency> -->
+		<dependency>
+			<groupId>com.aspose</groupId>
+			<artifactId>aspose-words</artifactId>
+			<version>20.4</version>
+			<classifier>jdk17</classifier>
+		</dependency>
 
 
 		<dependency>
@@ -68,11 +78,17 @@
 		</dependency>
 	</dependencies>
 
-	<!-- <repositories> <repository> <id>aspose-maven-repository</id> <url>http://maven.aspose.com/repository/repo/</url> 
-		</repository> <repository> <id>com.springsource.repository.bundles.external</id> 
-		<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name> 
-		<url>http://repository.springsource.com/maven/bundles/external</url> </repository> 
-		</repositories> -->
+	<repositories>
+		<repository>
+			<id>aspose-maven-repository</id>
+			<url>http://maven.aspose.com/repository/repo/</url>
+		</repository>
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>

@@ -1,7 +1,16 @@
-# File-Upload-Convert-Download
-This project contains code to enable "file - upload - download" from spring boot application.
+# File-Download
+This project contains code to enable "file upload - download" from spring boot application.
 
-Files get uploaded as multipart and get store in in-memory database as byte array. The same is retrieve and process for download.
+Files get uploaded as multi-part and get store in in-memory database as byte array. The same is retrieve and process for download.
+
+File Conversion
+---------------
+
+Currently, converting files from docx to pdf format. This code uses 3 APIs
+* Aspose: It is NOT open-source. APIs distributed is just for trial and testing purpose. Buy license to use full features of this API.
+* opensagres: Third party library uses Apache POI and iText. May face some problem on converting docx file with images and tables.
+* docx4j: Uses https://converter-eval.plutext.com/ to convert file. 
+
 
 Access
 ------
@@ -25,6 +34,12 @@ Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.doc
 ![File Upload SnapShot](https://github.com/rishidx/code/blob/master/file-upload-convert-download/postman-upload.PNG)
 
 * download file: http://localhost:8080/file/download/{id} OR http://localhost:8080/file/download?id={id}
+
+* convert and download file:
+Upload docx file using upload api and then perform following task
+ - Aspose : http://localhost:8080/file/convert/aspose?id={id}
+ - opensagres: http://localhost:8080/file/convert/opensagres?id={id}
+ - docx4j: http://localhost:8080/file/convert/docx4j?id={id}
 
 Build
 =====
@@ -54,4 +69,7 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+* [PDF-Converter-Java](https://github.com/plutext/PDF-Converter-Java)
+* [Aspose.Words Java for docx4j](https://docs.aspose.com/display/wordsjava/Convert+Document+to+PDF)
+* [XWPFDocument 2 PDF](https://github.com/opensagres/xdocreport/wiki/XWPFConverterPDFViaIText)
 
