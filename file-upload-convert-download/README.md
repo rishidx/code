@@ -21,7 +21,7 @@ Content-Disposition: form-data; name="file"; filename="Employee.docx"
 Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--`
 
-![Postman Tool SnapShot] (postman-upload.PNG)
+![Postman Tool SnapShot] (https://github.com/rishidx/code/blob/master/file-upload-convert-download/postman-upload.PNG)
 
 * download file: http://localhost:8080/file/download/1 OR http://localhost:8080/file/download?id=1
 
