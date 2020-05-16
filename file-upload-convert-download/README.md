@@ -24,7 +24,7 @@ Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.doc
 
 ![File Upload SnapShot](https://github.com/rishidx/code/blob/master/file-upload-convert-download/postman-upload.PNG)
 
-* download file: http://localhost:8080/file/download/1 OR http://localhost:8080/file/download?id=1
+* download file: http://localhost:8080/file/download/{id} OR http://localhost:8080/file/download?id={id}
 
 Build
 =====
